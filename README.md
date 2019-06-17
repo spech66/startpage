@@ -1,5 +1,7 @@
 # Startpage
 
+![Startpage](https://raw.githubusercontent.com/spech66/startpage/master/docs/screenshot.png "Startpage")
+
 Simple startpage.
 
 ## Usage
