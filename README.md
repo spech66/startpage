@@ -31,6 +31,8 @@ ruby -run -ehttpd . -p8000
 
 ## Sources
 
+* Background image by [Mikael Gustafsson](https://www.artstation.com/artwork/Y2Wew)
+
 Inspired by:
 
 * [Reddit - r/startpages](https://www.reddit.com/r/startpages/)

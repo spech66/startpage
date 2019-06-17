@@ -7,4 +7,10 @@ body {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+  background: url("assets/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: #ffffff;
 }
