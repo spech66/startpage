@@ -21,7 +21,7 @@ const entries = [
 ];
 
 // Switch between group mode (true) and icon only mode (false)
-const groupMode = true;
+const groupMode = false;
 
 // Text above the search box
 const welcomeText = "Startpage!";
