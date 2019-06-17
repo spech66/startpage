@@ -14,7 +14,7 @@ To test changes locally the build in development servers of many languages can b
 ### Python
 
 ```bash
-python3 -m http.server 8080  --bind 127.0.0.1
+python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
 ### PHP
@@ -34,5 +34,5 @@ ruby -run -ehttpd . -p8000
 Inspired by:
 
 * [Reddit - r/startpages](https://www.reddit.com/r/startpages/)
-* [Github - 0-Tikaro - Minimum Viable Startpage](https://github.com/0-Tikaro/minimum-viable-startpage)
+* [Github - 0-Tikaro - Minimum Viable Startpage](https://github.com/0-Tikaro/minimum-viable-startpage), Searchbox code
 * [Github - ViktorKare - startpage](https://github.com/ViktorKare/startpage)

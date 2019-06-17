@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">      
         <link rel="stylesheet" href="./style.css">
 
         <title>Startpage</title>
@@ -13,6 +14,10 @@
 
         <main role="main" class="container">
             <h1>Startpage!</h1>
+
+            <form id="search-form" action="https://www.google.com/search" method="get">
+                <input id="search-bar" class="form-control" type="text" autofocus type="text" placeholder="Search Google" name="q" alt="Search Google" onkeydown="if(event.keyCode === 13) { this.form.submit(); return false; }">
+            </form>
         </main>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
