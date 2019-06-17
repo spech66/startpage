@@ -1,6 +1,7 @@
 # Startpage
 
 ![Startpage](https://raw.githubusercontent.com/spech66/startpage/master/docs/screenshot.png "Startpage")
+![Startpage Grid](https://raw.githubusercontent.com/spech66/startpage/master/docs/screenshot2.png "Startpage Grid")
 
 Simple startpage.
 
