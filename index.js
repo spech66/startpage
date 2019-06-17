@@ -5,15 +5,16 @@ const entries = [
             { name: "reddit", url: "https://www.reddit.com", icon: "fab fa-reddit" },
             { name: "Facebook", url: "https://www.facebook.com", icon: "fab fa-facebook" },
             { name: "Instagram", url: "https://www.instagram.com", icon: "fab fa-instagram" },
+            { name: "Spotify", url: "https://www.spotify.com", icon: "fab fa-spotify" },
         ]
     }, {
-        group: "News",
+        group: "Utilities",
         items: [
-            { name: "reddit", url: "https://www.reddit.com", icon: "fab fa-reddit" },
-            { name: "Facebook", url: "https://www.facebook.com", icon: "fab fa-facebook" },
-            { name: "Instagram", url: "https://www.instagram.com", icon: "fab fa-instagram" },
-            { name: "Instagram", url: "https://www.instagram.com", icon: "fab fa-instagram" },
-            { name: "Instagram", url: "https://www.instagram.com", icon: "fab fa-instagram" },
+            { name: "Confluence", url: "https://www.atlassian.com/software/confluence", icon: "fab fa-confluence" },
+            { name: "D&D", url: "https://dnd.wizards.com/", icon: "fab fa-d-and-d" },
+            { name: "GitHub", url: "https://www.github.com", icon: "fab fa-github" },
+            { name: "Medium", url: "https://www.medium.com", icon: "fab fa-medium" },
+            { name: "Amazon", url: "https://www.amazon.de", icon: "fab fa-amazon" },
         ]
     },
 ];
@@ -46,6 +47,7 @@ createGroupList = () => {
         gleClone.prop("id", "groupListEntry" + idName).appendTo(groupList);
     }
 
+    groupList.remove();
     groupListEntry.remove();
 }
 
