@@ -1,3 +1,4 @@
+// Define the groups and items. Groups are only shown in group mode.
 const entries = [
     {
         group: "Social media",
@@ -19,6 +20,16 @@ const entries = [
     },
 ];
 
+// Switch between group mode (true) and icon only mode (false)
+const groupMode = false;
+
+// Text above the search box
+const welcomeText = "Startpage!";
+
+//#############################################################################
+//# Do not change anything below this line
+//#############################################################################
+
 createIconList = () => {
     let iconList = $("#iconList");
     let iconListEntry = $("#iconListEntry");
@@ -34,6 +45,7 @@ createIconList = () => {
         }
     }
 
+    // Orginal entry is only for cloning. Remove it.
     iconListEntry.remove();
 }
 
@@ -47,11 +59,18 @@ createGroupList = () => {
         gleClone.prop("id", "groupListEntry" + idName).appendTo(groupList);
     }
 
+    // Orginal entry is only for cloning. Remove it.
     groupList.remove();
-    groupListEntry.remove();
 }
 
 $(function() {
-    createIconList();
-    createGroupList();
+    if(groupMode) {
+        createGroupList();
+        $("#iconList").remove();
+    } else {
+        createIconList();
+        $("#groupList").remove();
+    }
+
+    $(".welcomeText")[0].innerText = welcomeText;
 });
