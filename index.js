@@ -21,7 +21,7 @@ const entries = [
 ];
 
 // Switch between group mode (true) and icon only mode (false)
-const groupMode = false;
+const groupMode = true;
 
 // Text above the search box
 const welcomeText = "Startpage!";
@@ -53,14 +53,27 @@ createGroupList = () => {
     let groupList = $("#groupList");
     let groupListEntry = $("#groupListEntry");
 
-    for(const groupEntrie of entries) {
+    for(const groupEntry of entries) {
         const gleClone = groupListEntry.clone();
-        const idName = groupEntrie.group.replace(/[^A-Za-z0-9]/g, 'x');
+        const idName = groupEntry.group.replace(/[^A-Za-z0-9]/g, 'x');
+        gleClone.find(".groupTitle")[0].innerText = groupEntry.group;
+
+        const groupListList = gleClone.find(".groupListList");
+        const groupListListItem = groupListList.find(".groupListListItem");
+        for(const item of groupEntry.items) {
+            const newListItem = groupListListItem.clone().appendTo(groupListList);
+            newListItem.find(".groupLink").each(function() { (this).href = item.url });
+            newListItem.find(".groupIcon").addClass(item.icon);
+            newListItem.find(".groupText")[0].innerText = item.name;
+        }
+        // Orginal entry is only for cloning. Remove it.
+        groupListListItem.remove();
+
         gleClone.prop("id", "groupListEntry" + idName).appendTo(groupList);
     }
 
     // Orginal entry is only for cloning. Remove it.
-    groupList.remove();
+    groupListEntry.remove();
 }
 
 $(function() {
