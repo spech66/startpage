@@ -41,6 +41,7 @@ createIconList = () => {
             ileClone.find(".iconLink").each(function() { (this).href = item.url });
             ileClone.find(".iconIcon").addClass(item.icon);
             ileClone.find(".iconLink")[1].innerText = item.name;
+            ileClone.click(function() { window.location.href = item.url; });
             ileClone.prop("id", "iconListEntry" + idName).appendTo(iconList);
         }
     }
