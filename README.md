@@ -7,8 +7,10 @@ Simple startpage.
 
 ## Usage
 
-Modify the links and icons in `index.js`.
-Host the site on a webserver like nginx. Set the Browser specific default page to your url.
+1. Modify the links and icons in `index.js`.
+2. Host the site on a webserver.
+3. Set the Browser specific "new tab page" setting to your url.
+   * Chrome requires an extension for this. e.g. [New Tab Redirect](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna)
 
 ## Test local changes
 
