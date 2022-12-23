@@ -34,14 +34,14 @@ createIconList = () => {
     let iconList = $("#iconList");
     let iconListEntry = $("#iconListEntry");
 
-    for(const groupEntry of entries) {
-        for(const item of groupEntry.items) {
+    for (const groupEntry of entries) {
+        for (const item of groupEntry.items) {
             const ileClone = iconListEntry.clone();
             const idName = (groupEntry.group + item.name).replace(/[^A-Za-z0-9]/g, 'x');
-            ileClone.find(".iconLink").each(function() { (this).href = item.url });
+            ileClone.find(".iconLink").each(function () { (this).href = item.url });
             ileClone.find(".iconIcon").addClass(item.icon);
             ileClone.find(".iconLink")[1].innerText = item.name;
-            ileClone.click(function() { window.location.href = item.url; });
+            ileClone.click(function () { window.location.href = item.url; });
             ileClone.prop("id", "iconListEntry" + idName).appendTo(iconList);
         }
     }
@@ -54,16 +54,16 @@ createGroupList = () => {
     let groupList = $("#groupList");
     let groupListEntry = $("#groupListEntry");
 
-    for(const groupEntry of entries) {
+    for (const groupEntry of entries) {
         const gleClone = groupListEntry.clone();
         const idName = groupEntry.group.replace(/[^A-Za-z0-9]/g, 'x');
         gleClone.find(".groupTitle")[0].innerText = groupEntry.group;
 
         const groupListList = gleClone.find(".groupListList");
         const groupListListItem = groupListList.find(".groupListListItem");
-        for(const item of groupEntry.items) {
+        for (const item of groupEntry.items) {
             const newListItem = groupListListItem.clone().appendTo(groupListList);
-            newListItem.find(".groupLink").each(function() { (this).href = item.url });
+            newListItem.find(".groupLink").each(function () { (this).href = item.url });
             newListItem.find(".groupIcon").addClass(item.icon);
             newListItem.find(".groupText")[0].innerText = item.name;
         }
@@ -77,8 +77,8 @@ createGroupList = () => {
     groupListEntry.remove();
 }
 
-$(function() {
-    if(groupMode) {
+$(function () {
+    if (groupMode) {
         createGroupList();
         $("#iconList").remove();
     } else {

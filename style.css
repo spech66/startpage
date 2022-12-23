@@ -1,28 +1,29 @@
-html, body {
-  height: 100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  background: url("assets/bg.jpg");
-  background-size: cover;
-  flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url("assets/bg.jpg");
+    background-size: cover;
+    flex-wrap: wrap;
 }
 
 h1 {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .card {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 .card:hover {
-  opacity: 1.0;
+    opacity: 1;
 }
 
 .cursorPointer:hover {
-  cursor: pointer;
+    cursor: pointer;
 }

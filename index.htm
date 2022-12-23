@@ -1,47 +1,58 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">      
-        <link rel="stylesheet" href="./style.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Startpage</title>
-    </head>
-    <body class="text-center">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 
-        <main role="main" class="container">
-            <h1 class="welcomeText">TEXT</h1>
+    <title>Startpage</title>
+</head>
 
-            <form id="search-form" action="https://www.google.com/search" method="get">
-                <input id="search-bar" class="form-control" type="text" autofocus type="text" placeholder="Search Google" name="q" alt="Search Google" onkeydown="if(event.keyCode === 13) { this.form.submit(); return false; }">
-            </form>
+<body class="text-center">
 
-            <div id="iconList" class="card-columns mt-3">
-                <div id="iconListEntry" class="card">
-                    <div class="card-body cursorPointer">
-                        <p class="card-text"><a href="#" target="_self" class="iconLink"><i class="fa-5x iconIcon"></i></a></p>
-                        <p class="card-text"><a href="#" target="_self" class="iconLink">TEXT</a></p>
-                    </div>
+    <main role="main" class="container">
+        <h1 class="welcomeText">TEXT</h1>
+
+        <form id="search-form" action="https://www.google.com/search" method="get">
+            <input id="search-bar" class="form-control" type="text" autofocus type="text" placeholder="Search Google"
+                name="q" alt="Search Google" onkeydown="if(event.keyCode === 13) { this.form.submit(); return false; }">
+        </form>
+
+        <div id="iconList" class="card-columns mt-3">
+            <div id="iconListEntry" class="card">
+                <div class="card-body cursorPointer">
+                    <p class="card-text"><a href="#" target="_self" class="iconLink"><i class="fa-5x iconIcon"></i></a>
+                    </p>
+                    <p class="card-text"><a href="#" target="_self" class="iconLink">TEXT</a></p>
                 </div>
             </div>
+        </div>
 
-            <div id="groupList" class="card-deck mt-3">
-                <div id="groupListEntry" class="card">
-                    <div class="card-body">
-                        <h5 class="card-title groupTitle">GROUPNAME</h5>                        
-                        <ul class="list-group list-group-flush groupListList">
-                            <li class="list-group-item groupListListItem"><a href="#" target="_self" class="groupLink"><i class="groupIcon"></i> <span class="groupText">TEXT</span></a></li>
-                        </ul>
-                    </div>
+        <div id="groupList" class="card-deck mt-3">
+            <div id="groupListEntry" class="card">
+                <div class="card-body">
+                    <h5 class="card-title groupTitle">GROUPNAME</h5>
+                    <ul class="list-group list-group-flush groupListList">
+                        <li class="list-group-item groupListListItem"><a href="#" target="_self" class="groupLink"><i
+                                    class="groupIcon"></i> <span class="groupText">TEXT</span></a></li>
+                    </ul>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-        <script src="./index.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
 </html>
